@@ -1,0 +1,16 @@
+<div>
+  <h1 class="text-center">Customer Records Database</h1>
+  <br />
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-8 ml-auto">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item"  *ngFor="let cust of customers; let i=index">
+            <a href="javascript:void(0)" (click)="setSlug(cust.slug)">{{cust.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
