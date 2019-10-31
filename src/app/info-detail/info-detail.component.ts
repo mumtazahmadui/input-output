@@ -1,10 +1,10 @@
 import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 
 @Component({
-  selector: 'info-table',
-  templateUrl: './info.component.html',
+  selector: 'info-detail',
+  templateUrl: './info-detail.component.html',
 })
-export class InfoComponent implements OnInit {
+export class InfoDetailComponent implements OnInit {
   @Input() customerSlug: string;
   public customerData: any;
   showDetailFlag: boolean;
@@ -41,7 +41,8 @@ export class InfoComponent implements OnInit {
   ngOnChanges(changes: SimpleChanges) {
     this.showDetails(changes.customerSlug.currentValue);
   }
-  public showDetails(slug: string) {
+  public showDetails(slug) {
+    console.log('sss : ', slug)
     this.showDetailFlag = true;
     this.customerData = this.customers[slug];
   }

@@ -1,0 +1,5 @@
+<div class="box">
+    <input type="text" placeholder="Create user" #user>
+    <button (click)="creatUser(user)">Create</button>
+    <div class="count" *ngIf="count">Total count :{{count}}</div>
+</div>

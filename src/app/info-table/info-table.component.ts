@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'customer-table',
-  templateUrl: './table.component.html',
+  selector: 'info-table',
+  templateUrl: './info-table.component.html',
 })
-export class TableComponent {
+export class InfoTableComponent {
   @Output() eventClicked = new EventEmitter<string>();
 
   selectedSlug: string = "";

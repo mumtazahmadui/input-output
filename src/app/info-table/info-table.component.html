@@ -7,7 +7,7 @@
       <div class="col-8 ml-auto">
         <ul class="list-group list-group-horizontal">
           <li class="list-group-item"  *ngFor="let cust of customers; let i=index">
-            <a href="javascript:void(0)" (click)="setSlug(cust.slug)">{{cust.name}}</a>
+            <a href="javascript:void(0)" (click)="setSlug(cust.slug, cust.cat)">{{cust.name}}</a>
           </li>
         </ul>
       </div>
